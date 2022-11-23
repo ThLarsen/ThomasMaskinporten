@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "7d47f5e6-3524-4d25-b172-301f7bdcdcc1",
+		"name": "Maskinporten",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exchange Grant Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+							"type": "default"
+						},
+						{
+							"key": "assertion",
+							"value": "eyJ4NWMiOlsiTUlJRlVE....",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ver2.maskinporten.no/token",
+					"protocol": "https",
+					"host": [
+						"ver2",
+						"maskinporten",
+						"no"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vegvesenet Eiersjekk Test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJ2UHBaZ....",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\t\t\"kjennemerke\": \"CU10034\"\r\n\t}\r\n]"
+				},
+				"url": {
+					"raw": "https://akfell-datautlevering-sisdinky.utv.atlas.vegvesen.no/kjoretoyoppslag/bulk/kjennemerke",
+					"protocol": "https",
+					"host": [
+						"akfell-datautlevering-sisdinky",
+						"utv",
+						"atlas",
+						"vegvesen",
+						"no"
+					],
+					"path": [
+						"kjoretoyoppslag",
+						"bulk",
+						"kjennemerke"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
