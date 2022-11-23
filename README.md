@@ -54,4 +54,10 @@ De 2 første delene er bare Base64 enkodet Json og kan dekodes av hvilken som he
 ### Testing med Postman
 !Kommer
 
+### JWT Token Eksempel
+![JWT Token Til maskinporten](https://user-images.githubusercontent.com/8003056/203565938-97fb1888-3005-4925-813c-a98af7efe00d.PNG)
+
+![JWT Token Fra maskinporten](https://user-images.githubusercontent.com/8003056/203565869-9ec73905-1c14-40cc-bbc1-6295d867db22.PNG)
+
+
 
