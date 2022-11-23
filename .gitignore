@@ -1,0 +1,6 @@
+# .NET Core build 
+bin/
+obj/
+
+#Ikke sjekk in Dev appsettings 
+appsettings.Development.json
