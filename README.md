@@ -8,6 +8,8 @@ Fokuset er på læring ,derfor er f.eks måten tokenet genererers på veldig for
 Du vil trenge et virksomhetssertifikat for å kunne bruke Maskinporten. Virksomhetsertifikat kan bestilles hos f.eks Buypass.
 Du trenger også tilgang til https://selvbetjening-samarbeid-ver2.difi.no/integrations for å opprette nye klienter for maskinporten. 
 
+Koden funker og kan brukes ,men anbefaler og bruke et annet bilbiotek i produksjon som f.eks System.IdentityModel.Tokens.Jwt 
+
 ### Innhold
 
 #### Thomas.Maskinporten.Core
@@ -32,6 +34,24 @@ Kort forklart så funker maskinporten slik.
 !Kommer
 
 ### Samarbeidsportalen (Integrasjoner/klienter)
+!Kommer
+
+### Hvordan koden fungerer. 
+JWT Token er bygget opp av 3 deler adskilt med punktum "xxx.yyy.zzzz". De 3 delene er Header, Payload og Signatur.
+De 2 første delene er bare Base64 enkodet Json og kan dekodes av hvilken som helst Base64 dekoder ,men anbefalter å bruker https://jwt.io/ for å decode tokens. 
+
+
+!Kommer
+
+####  Sertifikater
+
+#### Generer Token & Token Header
+
+#### Signer Token. 
+
+#### Veksle inn Token hos Maskinporten
+
+### Testing med Postman
 !Kommer
 
 
