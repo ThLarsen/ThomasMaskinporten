@@ -26,7 +26,7 @@ Hva er maskinporten? Maskinporten er en løsning for autentisering av maskin-til
 Kort forklart så funker maskinporten slik.
  - Du lager et token (JWT token) som du signerer med virksomhetssertifikatet.
  - Du sender dette tokenet til maskinporten som verifiserer innholdet og gir deg tilbake et nytt token (jwt)
- - Du bruker tokenet du får tilbake fra maskinporten til å autentisere mot f.eks vegvesenet eiersekk (oauth 2.0 bearer token)
+ - Du bruker tokenet du får tilbake fra maskinporten til å autentisere mot f.eks vegvesenet eiersjekk (oauth 2.0 bearer token)
 
 ### Virksomhetssertifikat
 !Kommer
