@@ -55,8 +55,11 @@ De 2 første delene er bare Base64 enkodet Json og kan dekodes av hvilken som he
 !Kommer
 
 ### JWT Token Eksempel
+
+Token som sendes til maskinporten (Obs! Noen tjenster krever at resource er satt ,dette vil gjenspeiles i audience på tokenet du får tilbake fra maskinporten.)
 ![JWT Token Til maskinporten](https://user-images.githubusercontent.com/8003056/203565938-97fb1888-3005-4925-813c-a98af7efe00d.PNG)
 
+Token som du får tilbake fra maskinporten. 
 ![JWT Token Fra maskinporten](https://user-images.githubusercontent.com/8003056/203565869-9ec73905-1c14-40cc-bbc1-6295d867db22.PNG)
 
 
