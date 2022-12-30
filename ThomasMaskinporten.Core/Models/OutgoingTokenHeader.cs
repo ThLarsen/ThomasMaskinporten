@@ -14,4 +14,10 @@ public class OutgoingTokenHeader
         //Convert.ToBase64String(this.certificate.Export(X509ContentType.Cert)
 
     }
+
+    public OutgoingTokenHeader(string id)
+    {
+        alg = "RS256";
+        kid = id;
+    }
 }
